@@ -1,17 +1,23 @@
 				teste pratico back-end 
  
-1 - Instalar o python versao 3.7.5 que se encontra na pasta programas
-2 - Abra o prompt de comando e digite: pip install pandas 
-3 - instalar o docker que se encontra na pasta programas
-4 - intalar windows installar wsl_update_x64 que se encontra na pasta programas
-5 – Abra o power shell como administrador e digite:  docker pull mariadb
-6- Agora Digite :docker run -p 3306:3306 --name meu_banco -e MYSQL_ROOT_PASSWORD=root -d mariadb)
-7- Instalar dbeaver que se encontra na pasta programas
-8- Fazer a conexão como na imagem abaixo:
+1 - Baixar e Instalar o python versao 3.7.5.
+
+2 - Abra o prompt de comando e digite: pip install pandas.
+
+3 - Baixar e instalar o docker desktop.
+
+4 - Baixar e intalar windows installar wsl_update_x64.
+
+5 – Abra o power shell como administrador e digite:  docker pull mariadb.
+
+6- Agora Digite :docker run -p 3306:3306 --name meu_banco -e MYSQL_ROOT_PASSWORD=root -d mariadb.
+
+7- Baixar e Instalar dbeaver. 
+
+8- Fazer a conexão como na imagem conexaodb(Password=root)
   
-Password(root)
 9 - Após conectar abre o sql editor na nova base de dados e cole o codigo abaixo para criar tabela.
-CREATE TABLE CESSAO_FUNDO (
+  CREATE TABLE CESSAO_FUNDO (
   ID_CESSAO INT(22) NOT NULL AUTO_INCREMENT,
   ORIGINADOR VARCHAR(250) NOT NULL,
   DOC_ORIGINADOR VARCHAR(250) NOT NULL,
@@ -35,7 +41,6 @@ CREATE TABLE CESSAO_FUNDO (
   PRIMARY KEY (ID_CESSAO)
 )
 
-
-
 10- abra o cmd no caminho aonde se encontra o projeto e digite; python.\app.py
+
 11- Agora e só confirmar no banco se os dados foram inseridos.
